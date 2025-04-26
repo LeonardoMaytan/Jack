@@ -1,0 +1,327 @@
+/* productos.css */
+
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #FAF3E0; /* Crema claro para un fondo luminoso */
+    color: #5C3D2E; /* Marrón sofisticado */
+}
+
+.encabezado {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px; /* Añade espacio debajo del logo */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Agrega separación entre los ítems del menú */
+}
+
+.menu a {
+    font-size: 1.4em; /* Aumenta la legibilidad */
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fffdfd;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #654321;
+}
+/* Estilos para la sección de más productos */
+
+/* Estilos para la sección de productos */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 20px;
+    background-color: #FAF3E0; /* Fondo crema */
+    text-align: center;
+}
+
+.productos h2 {
+    width: 100%;
+    font-size: 2em;
+    color: #8B5A2B; /* Marrón cálido */
+    margin-bottom: 15px;
+}
+
+.productos p {
+    width: 100%;
+    font-size: 1.2em;
+    color: #5C3D2E; /* Marrón sofisticado */
+    margin-bottom: 30px;
+}
+
+.producto {
+    width: 30%;
+    background-color: #FFFFFF; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 1.4em;
+    color: #5C3D2E;
+    margin-top: 10px;
+}
+
+.producto p {
+    font-size: 1.1em;
+    color: #654321;
+}
+
+.precio {
+    display: block;
+    font-size: 1.3em;
+    color: #8B5A2B;
+    margin: 10px 0;
+}
+
+/* Botón de compra */
+.comprar {
+    padding: 12px 18px;
+    font-size: 1em;
+    color: white;
+    background-color: #468189;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.comprar:hover {
+    background-color: #031926;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .producto {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: 80%;
+    }
+}
+
+.sobre-nosotros {
+    padding: 40px;
+    background-color: #FAF3E0; /* Beige claro para mantener la armonía del diseño */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nosotros h2 {
+    text-align: center;
+    color: #5C3D2E;
+    font-size: 2em;
+}
+
+.sobre-nosotros p {
+    font-size: 1.2em;
+    color: #654321;
+    line-height: 1.6;
+}
+
+.info-empresa {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EED9C4; /* Tono más cálido para resaltar la información */
+    border-radius: 10px;
+}
+
+.info-empresa h3 {
+    color: #5C3D2E;
+    font-size: 1.5em;
+}
+
+.info-empresa p {
+    font-size: 1em;
+    color: #654321;
+}
+
+.pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #031926; /* Azul profundo */
+    color: #FFFFFF;
+}
+
+.seccion {
+    width: 30%;
+    text-align: center;
+}
+
+.redes img {
+    width: 30px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+.informacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.informacion ul li {
+    margin: 8px 0;
+}
+
+.informacion ul li a {
+    text-decoration: none;
+    color: #9DBEBB; /* Verde grisáceo */
+    transition: color 0.3s;
+}
+
+.informacion ul li a:hover {
+    color: #468189;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #468189;
+    border-radius: 5px;
+    background-color: #FAF3E0;
+}
+
+.boton-suscripcion {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: 2px solid #468189;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-suscripcion:hover {
+    background-color: #468189;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #9DBEBB;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .pie-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes a {
+    font-size: 2em;
+    color: #ffffff; /* Iconos en blanco */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #468189; /* Azul medio al pasar el cursor */
+}
+
+.icono-ubicacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #468189;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 30px; /* Asegura que el icono sea visible */
+    color: white;
+}
+
+.icono-ubicacion:hover {
+    background-color: #031926;
+}
+

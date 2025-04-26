@@ -1,0 +1,519 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #FAF3E0; /* Crema claro para un fondo luminoso */
+    color: #5C3D2E; /* Marrón sofisticado */
+}
+
+.encabezado {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo h1 {
+    color: #5C3D2E; /* Marrón oscuro para contraste */
+    font-size: 2em;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fffdfd; /* Marrón dorado suave */
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #654321; /* Marrón más intenso */
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFFFF; /* Fondo blanco puro para contraste */
+}
+
+h2 {
+    color: #8B5A2B; /* Marrón cálido */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+}
+.video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para que cubra toda el área */
+    z-index: -1;
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente para destacar el texto */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #031926;
+}
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.producto {
+    text-align: center;
+    width: 30%;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+}
+
+.producto p {
+    font-size: 1em;
+    color: #031926; /* Azul oscuro para contraste */
+    margin-top: 8px;
+}
+
+.boton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #468189; /* Azul medio */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #031926; /* Azul oscuro */
+}
+.categoria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bloque {
+    width: 30%;
+    background-color: #FAF3E0; /* Fondo negro para elegancia */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.bloque img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bloque img:hover {
+    transform: scale(1.05);
+}
+
+.bloque p {
+    font-size: 1.2em;
+    color: #5C3D2E; /* Texto blanco para contraste */
+    margin-top: 10px;
+}
+.botton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #5C3D2E; /* Texto blanco */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #468189; /* Borde azul medio */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botton:hover {
+    color: #031926; /* Azul oscuro */
+    border-color: #031926; /* Borde cambia de color */
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .categoria {
+        flex-wrap: wrap;
+    }
+
+    .bloque {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bloque {
+        width: 80%;
+    }
+}
+
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5E6C8; /* Beige claro para un fondo más luminoso */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    color: #5C3D2E; /* Marrón sofisticado */
+}
+
+.info-contacto {
+    width: 45%;
+}
+
+.formulario-contacto {
+    width: 45%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #8B5A2B; /* Bordes elegantes en marrón cálido */
+    background-color: #FAF3E0; /* Fondo claro */
+    color: #5C3D2E;
+}
+
+textarea {
+    height: 100px;
+}
+
+.boton-enviar {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #5C3D2E;
+    background-color: transparent;
+    border: 2px solid #8B5A2B;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-enviar:hover {
+    color: #FFFFFF;
+    background-color: #8B5A2B; /* Marrón cálido al pasar el cursor */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contacto-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-contacto, .formulario-contacto {
+        width: 100%;
+    }
+}
+
+.sobre-nosotros {
+    padding: 40px;
+    background-color: #FAF3E0; /* Beige claro para mantener la armonía del diseño */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nosotros h2 {
+    text-align: center;
+    color: #5C3D2E;
+    font-size: 2em;
+}
+
+.sobre-nosotros p {
+    font-size: 1.2em;
+    color: #654321;
+    line-height: 1.6;
+}
+
+.info-empresa {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #EED9C4; /* Tono más cálido para resaltar la información */
+    border-radius: 10px;
+}
+
+.info-empresa h3 {
+    color: #5C3D2E;
+    font-size: 1.5em;
+}
+
+.info-empresa p {
+    font-size: 1em;
+    color: #654321;
+}
+
+.pie-pagina {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #031926; /* Azul profundo */
+    color: #FFFFFF;
+}
+
+.seccion {
+    width: 30%;
+    text-align: center;
+}
+
+.redes img {
+    width: 30px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes img:hover {
+    transform: scale(1.1);
+}
+
+.informacion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.informacion ul li {
+    margin: 8px 0;
+}
+
+.informacion ul li a {
+    text-decoration: none;
+    color: #9DBEBB; /* Verde grisáceo */
+    transition: color 0.3s;
+}
+
+.informacion ul li a:hover {
+    color: #468189;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #468189;
+    border-radius: 5px;
+    background-color: #FAF3E0;
+}
+
+.boton-suscripcion {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: 2px solid #468189;
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.boton-suscripcion:hover {
+    background-color: #468189;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #9DBEBB;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .pie-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes a {
+    font-size: 2em;
+    color: #ffffff; /* Iconos en blanco */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #468189; /* Azul medio al pasar el cursor */
+}
+
+#bebidas-lujo {
+    padding: 40px;
+    text-align: center;
+}
+
+.contenedor-lujo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.texto-lujo {
+    width: 50%;
+    text-align: left;
+}
+
+.texto-lujo h2 {
+    font-size: 2.2em;
+    color: #5C3D2E; /* Marrón sofisticado */
+}
+
+.texto-lujo p {
+    font-size: 1.2em;
+    color: #654321;
+    line-height: 1.6;
+}
+
+.imagen-lateral img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen-inferior {
+    margin-top: 20px;
+}
+
+.imagen-inferior img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bottoon {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #5C3D2E; /* Texto blanco */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #468189; /* Borde azul medio */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bottoon:hover {
+    color: #031926; /* Azul oscuro */
+    border-color: #031926; /* Borde cambia de color */
+}
+
+.icono-ubicacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #468189;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icono-ubicacion img {
+    width: 40px;
+    height: 40px;
+}
+
+.icono-ubicacion:hover {
+    background-color: #031926;
+}
+
+.icono-ubicacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #468189;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 30px; /* Asegura que el icono sea visible */
+    color: white;
+}
+
+.icono-ubicacion:hover {
+    background-color: #031926;
+}
